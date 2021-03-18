@@ -1,5 +1,5 @@
-function enviar(oid, cor){
-    var u = document.getElementById(oid);
-    var ucont = u.innerHTML;
-    console.log(ucont);
+function enviar(uid, lid, cor){
+    var x = document.getElementById(uid).value;
+    
+    console.log(x);
 }
