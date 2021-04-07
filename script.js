@@ -1,3 +1,15 @@
+var req = new XMLHttpRequest();
+req.open('GET', 'uep.txt', true); 
+req.onreadystatechange = function () {
+ if (req.readyState == 4)
+  if  (req.status == 200) {
+   obj = JSON.parse(req.responseText);
+   alert(obj,"");
+  } else {
+   html.innerHTML+="<p>error "+req.status;
+ }
+};
+req.send(null);
 document.oncontextmenu = function(){return false;}
 shortcut = {
     all_shortcuts: {},
